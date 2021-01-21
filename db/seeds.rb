@@ -18,6 +18,7 @@ plant_5 = Product.new({ name: "Philodendron Gloriosum", price: 65, image_url: "h
 plant_5.save
 plant_6 = Product.new({ name: "Begonia Maculata", price: 35, image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe6NlIcfAIBa6E5LwOE5QXCLyLH8JfShQdng&usqp=CAU", description: "Green angle wing shaped leaves with a red back and white pokadots" })
 plant_6.save
-# plant_9 = Product.new({ name: "", price: , image_url: "", description: "" })
-# plant_10 = Product.new({ name: "", price: , image_url: "", description: "" })
-# plant_11 = Product.new({ name: "", price: , image_url: "", description: "" })
+
+Supplier.create({ name: "Fia Flora", email: "Fia.Flora@gmail.com", phone_number: "666-6666" })
+Supplier.create({ name: "Logee's Greenhouse", email: "Logee.greehouse@gmail.com", phone_number: "420-6969" })
+Supplier.create({ name: "Gabriella Plants", email: "Gabriella.Plants@gmail.com", phone_number: "666-2005" })

@@ -1,0 +1,10 @@
+{
+  id: supplier.id,
+  name: supplier.name,
+  price: supplier.price,
+  image_url: supplier.image_url,
+  description: supplier.description,
+  is_discounted?: supplier.is_discounted?,
+  tax_price: supplier.tax,
+  full_price: supplier.total,
+}
