@@ -22,4 +22,12 @@ class Product < ApplicationRecord
     full_price = self.price.to_f * 1.09
     return full_price
   end
+
+  def supplier
+    Supplier.find_by(id: supplier_id)
+  end
+
+  def images
+    Image.where(product_id: id)
+  end
 end
