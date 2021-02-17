@@ -37,4 +37,12 @@ class Product < ApplicationRecord
   def images
     Image.where(product_id: id)
   end
+
+  def primary_image_url
+    if images.length > 0
+      images[0].url
+    else
+      "https://thumbs.dreamstime.com/b/no-image-available-icon-flat-vector-no-image-available-icon-flat-vector-illustration-132482930.jpg"
+    end
+  end
 end
