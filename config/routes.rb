@@ -34,5 +34,7 @@ Rails.application.routes.draw do
     get "/carted_products" => "carted_products#index"
     delete "/carted_products/:id" => "carted_products#destroy"
     get "/carted_products/:id" => "carted_products#show"
+
+    get "/*path" => proc { [200, {}, [ActionView::Base.new.render(file: "public/index.html")]] }
   end
 end
